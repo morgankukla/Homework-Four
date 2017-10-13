@@ -60,7 +60,27 @@ public class ReadQuery {
     
     public String getHTMLtable () {
         String table= "";
-        table += "<table border=1>";
+        table += "<table>";
+        table += "<tr class= headerBackground>";
+        table +="<th>";
+        table += "Golfer ID";
+        table += "</th>";
+        table +="<th>";
+        table += "Golfer Name";
+        table += "</th>";
+        table +="<th>";
+        table += "Age";
+        table += "</th>";
+        table +="<th>";
+        table += "Handicap";
+        table += "</th>";
+        table +="<th>";
+        table += "Club Brand";
+        table += "</th>";
+        table += "<th>";
+        table += "";
+        table += "</th>";
+        table += "</tr>";
         
         try {
             while(this.results.next()){
@@ -71,8 +91,10 @@ public class ReadQuery {
                 uigolfers.setAge(this.results.getInt("age"));
                 uigolfers.setHandicap(this.results.getInt("handicap"));
                 uigolfers.setClubBrand(this.results.getString("clubBrand"));
+               
                 
-                table += "<tr>";
+                
+                table += "<tr class= trBackground>";
                 table += "<td>";
                 table += uigolfers.getGolferID();
                 table += "</td>";
@@ -92,6 +114,9 @@ public class ReadQuery {
                 table += "<td>";
                 table += uigolfers.getClubBrand();
                 table += "</td>";
+                
+                table += "<td>";
+                table += "<a href=delete?golferID=" + uigolfers.getGolferID() + "> Delete </a>"; 
                 table += "</tr>";
                 
             }

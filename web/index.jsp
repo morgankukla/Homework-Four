@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Homework 4</title>
+        <link rel="Stylesheet" type="text/css" href="styleSheet2.css"/>
     </head>
     <body>
         <h1>UI Golfers Database</h1>

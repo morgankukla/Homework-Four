@@ -1,0 +1,18 @@
+body {background-color: #D2B48C;}
+.trBackground{background-color: #F08080; color: #FFFFFF;}
+table, tr {
+    border: 1px solid white; 
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 5px;
+    background-color: #FFFFFF;}
+tr:hover {background-color: #CCCCCC;}
+tr:nth-child(even) {background-color: #EDEDED; color: black;}
+.headerBackground{background-color: #FFFF99; color: #696969;}
+h1{color: #696969;}
+.addGolfer {
+    color: #696969; 
+    width: 145px;
+    }
