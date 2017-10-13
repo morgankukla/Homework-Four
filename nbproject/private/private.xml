@@ -6,8 +6,13 @@
             <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/web/read.jsp</file>
             <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/model/UIGolfers.java</file>
             <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/dBHelpers/ReadQuery.java</file>
+            <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/web/add.jsp</file>
+            <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/Controller/AddForm.java</file>
+            <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/Controller/AddServlet.java</file>
+            <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/web/styleSheet2.css</file>
             <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/dBHelpers/dbConn.properties</file>
             <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/web/index.jsp</file>
+            <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/Controller/DeleteServlet.java</file>
             <file>file:/C:/Users/Morgan/Documents/NetBeansProjects/HomeworkFour/src/java/Controller/Read.java</file>
         </group>
     </open-files>
