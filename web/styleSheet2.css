@@ -1,4 +1,61 @@
+
+.wrap{text-align: center; width: 90%; margin: 0 auto; border: 8px solid black; margin-top: 25px;}
+
+.header{text-align: left; padding: 25px;}
+.headerImg {float: left; width: 200px; padding-right: 25px;}
+.headerText{float: left; height: 105px; padding-top: 50px; padding-left: 25px;}
+
+
+.main{text-align: left; padding: 25px;}
+
+.footer{text-align: left; padding: 25px;}
+
+.navcontainer{ margin-left: 30px; text-align: left;}
+
+/*Fat Erik's Pipelist*/
+/*http://css.maxdesign.com.au/listamatic/*/
+
+.navlist
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.navlist li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+.navlist li:before { content: "| "; }
+.navlist li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navlist li
+{
+border-left: 1px solid black;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navlist { height: 1%; }
+
+* html #navlist li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }
+
 body {background-color: #D2B48C;}
+.header{background-color: #FFFF99; color: #696969;}
 .trBackground{background-color: #F08080; color: #FFFFFF;}
 table, tr {
     border: 1px solid white; 
@@ -8,11 +65,24 @@ table, tr {
     vertical-align: bottom;
     padding: 5px;
     background-color: #FFFFFF;}
-tr:hover {background-color: #CCCCCC;}
-tr:nth-child(even) {background-color: #EDEDED; color: black;}
-.headerBackground{background-color: #FFFF99; color: #696969;}
-h1{color: #696969;}
+.update{
+    border: 1px solid white; 
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 5px;
+    background-color: #FFFFFF;}
 .addGolfer {
-    color: #696969; 
+    background-color: #F08080;
+    color: black; 
     width: 145px;
     }
+input[readonly] {background-color:gray;}
+tr:nth-child(even) {background-color: #EDEDED; color: black;}
+.updateTr{background-color: #F08080; color: black;}
+tr:hover {background-color: #CCCCCC;}
+h1{color: #696969;}
+
+
+
