@@ -89,6 +89,12 @@ public class SearchQuery {
         table += "</tr>";
         
         try {
+            if (!this.results.isBeforeFirst()){
+                table +="<tr>";
+                table += "<td colspan='6'> Sorry this golfer does not exist </td>";
+                table+= "</tr>";
+            }
+            else{
             while(this.results.next()){
                 
                 UIGolfers uigolfers= new UIGolfers();
@@ -124,7 +130,7 @@ public class SearchQuery {
                 table += "<td>";
                 table += "<a href=update?golferID=" + uigolfers.getGolferID()+ "> Update </a>" + "<a href=delete?golferID=" + uigolfers.getGolferID() + "> Delete </a>"; 
                 table += "</tr>";
-                
+                }
             }
         } catch (SQLException ex) {
             Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
